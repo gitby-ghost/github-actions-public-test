@@ -1,0 +1,11 @@
+name: 'Comment'
+on: ['push']
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+    
+      - name: 'RUN ACTION'
+        run: echo "hello from action"
